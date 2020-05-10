@@ -1,3 +1,4 @@
 tentang akiu
+Ini adalah akiu
 
-teknologi yang aku gunakan adalah hugo
+teknologi yang aku gunakan adalah https://gohugo.io/
