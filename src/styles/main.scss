@@ -1,5 +1,10 @@
 @import "variables";
 @import "globals";
+@import url('https://fonts.googleapis.com/css2?family=Arial:wght@300;400;500;600;700&display=swap');
+
+body {
+  font-family: 'Arial', sans-serif;
+}
 
 // file index
 .header {
@@ -29,6 +34,7 @@
       color: $color-primary;
     }
   }
+  
   #menu-bar {
     font-size: 3rem;
     color: #666;
