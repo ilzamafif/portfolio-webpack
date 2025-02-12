@@ -1,6 +1,6 @@
 const HomeTemplate = () => `
   <div class="content">
-    <img src="./images/profile.png" alt="Ilzam Afif" class="profile" />
+    <img src="./images/profile.jpeg" alt="Ilzam Afif" class="profile" />
     <h1 class="name">Ilzam Afif</h1>
     <p class="description">I'm Software Developer</p>
     <a href="/#/about" class="btn">About</a>
@@ -13,12 +13,12 @@ const AboutTemplate = () => `
         <p>Saya Adalah Seoarng Software Developer dengan 2 Tahun 
         pengalaman di bidang professional dalam pengembangan
         perangkat lunak, dengan keahlian dalam membangun website.
-        Mahir dalam bahasa pemrograman seperti JavaScript, dan PHP,
+        Mahir dalaam bahasa pemrograman seperti JavaScript, dan PHP,
         serta memiliki pengalaman dalam penggunaan kerangka kerja
         seperti Laravel dan Node Js. Memiliki minat yang tinggi dalam
         mengikuti perkembangan teknologi..</p>
       </div>
-      <img src="./images/profile.png" alt="">
+      <img src="./images/profile.jpeg" alt="">
       
     </section>
     <section class="cetificate">
