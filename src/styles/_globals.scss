@@ -52,7 +52,7 @@ section {
     right: 0;
     width: 0;
     height: 100%;
-    background: $color-primary;
+    background: linear-gradient(to right, #4B0082, #4B0082);
     transition: 0.3s linear;
     z-index: -1;
   }

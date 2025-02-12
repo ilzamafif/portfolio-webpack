@@ -14,9 +14,7 @@ class NavigatorBar extends HTMLElement {
 
       <nav class="navbar">
         <a href="#/home">Home</a>
-        <a href="#home">Blog</a>
         <a href="#/about">About</a>
-        <a href="#/contact">Contact</a>
       </nav>
     </header>
     `;
