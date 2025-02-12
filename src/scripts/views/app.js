@@ -7,11 +7,8 @@ class App {
   }
 
   async renderPage() {
-    console.log("Rendering Page");
     const url = UrlParser.parseActiveUrlWithCombiner();
-    console.log("Parsed URL:", url);
     const page = routes[url];
-    console.log("Matched Page:", page);
     if (page) {
       this._content.innerHTML = await page.render();
       await page.afterRender();

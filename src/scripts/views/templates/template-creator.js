@@ -45,8 +45,24 @@ const AboutTemplate = () => `
           <img src="./images/portfolio-9.png" alt="" />
           <div class="content">
             <h3>OPEN MUSIC</h3>
-            <p>REST API untuk pengelolaan MUSIC</p>
+            <p>Mengembangkan RESTFUL api untuk aplikasi OpenMusic dari sisi backend.</p>
             <a href="#/detail/open-music" class="btn">View</a>
+          </div>
+        </div>
+        <div class="box">
+          <img src="./images/portfolio-7.png" alt="" />
+          <div class="content">
+            <h3>Thermocouple App</h3>
+            <p>Thermocouple App adalah aplikasi yang dirancang untuk menampilkan suhu menggunakan sensor thermocouple</p>
+            <a href="#/detail/thermocouple-app" class="btn">View</a>
+          </div>
+        </div>
+        <div class="box">
+          <img src="./images/portfolio-6.png" alt="" />
+          <div class="content">
+            <h3>App Fecthing Data With blutooth</h3>
+            <p>Aplikasi untuk mengambil data menggunakan Bluetooth</p>
+            <a href="#/detail/nomads" class="btn">View</a>
           </div>
         </div>
         <div class="box">
@@ -57,35 +73,36 @@ const AboutTemplate = () => `
             <a href="#/detail/nomads" class="btn">View</a>
           </div>
         </div>
-        <div class="box">
-          <img src="./images/portfolio-7.png" alt="" />
-          <div class="content">
-            <h3>Thermocouple App</h3>
-            <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Doloribus, saepe!</p>
-            <a href="#/detail/thermocouple-app" class="btn">View</a>
-          </div>
-        </div>
-        <div class="box">
-          <img src="./images/portfolio-6.png" alt="" />
-          <div class="content">
-            <h3>App Fecthing Data With blutooth</h3>
-            <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Doloribus, saepe!</p>
-            <a href="#/detail/nomads" class="btn">View</a>
-          </div>
-        </div>
       </div>
     </section>
     <section class="portfolio">
       <h1 class="heading">Our <span>Certificate</span></h1>
-
       <div class="box-container">
+        <div class="box">
+          <a href="https://github.com/ilzamafif">
+           <img src="./images/certificate-6.jpg" class="image" />
+          </a>
+          <div class="content">
+            <h3>Build With Angga</h3>
+            <p>Full Sstack Web Developer</p>
+          </div>
+        </div>
+         <div class="box">
+          <a href="https://github.com/ilzamafif">
+            <img src="./images/certificate-4.jpg" class="image" />
+          </a>
+          <div class="content">
+            <h3>Dicoding</h3>
+            <p>Belajar Prinsip Pemrograman SOLID</p>
+          </div>
+        </div>
         <div class="box">
           <a href="https://github.com/ilzamafif">
             <img src="./images/certificate-1.jpg" class="image" />
           </a>
           <div class="content">
-            <h3>Moonton</h3>
-            <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Doloribus, saepe!</p>
+            <h3>Dicoding</h3>
+            <p>Menjadi Frontend Developer Expert</p>
           </div>
         </div>
         <div class="box">
@@ -93,8 +110,8 @@ const AboutTemplate = () => `
             <img src="./images/certificate-2.jpg" class="image" />
           </a>
           <div class="content">
-            <h3>Nomads</h3>
-            <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Doloribus, saepe!</p>
+            <h3>Dicoding</h3>
+            <p>Membangun Arsitketur Cloud Di AWS</p>
           </div>
         </div>
         <div class="box">
@@ -102,17 +119,8 @@ const AboutTemplate = () => `
             <img src="./images/certificate-3.jpg" class="image" />
           </a>
           <div class="content">
-            <h3>Staycation</h3>
-            <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Doloribus, saepe!</p>
-          </div>
-        </div>
-        <div class="box">
-          <a href="https://github.com/ilzamafif">
-            <img src="./images/certificate-4.jpg" class="image" />
-          </a>
-          <div class="content">
-            <h3>Payna</h3>
-            <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Doloribus, saepe!</p>
+            <h3>Dicoding</h3>
+            <p>Memulai Pemrograman Dengan Python</p>
           </div>
         </div>
         <div class="box">
@@ -120,17 +128,8 @@ const AboutTemplate = () => `
            <img src="./images/certificate-5.jpg" class="image" />
           </a>
           <div class="content">
-            <h3>Stream</h3>
-            <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Doloribus, saepe!</p>
-          </div>
-        </div>
-        <div class="box">
-          <a href="https://github.com/ilzamafif">
-           <img src="./images/certificate-6.jpg" class="image" />
-          </a>
-          <div class="content">
-            <h3>M</h3>
-            <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Doloribus, saepe!</p>
+            <h3>Build With Angga</h3>
+            <p>Full Stack javascript Developer</p>
           </div>
         </div>
       </div>
@@ -170,9 +169,9 @@ const ContactTemplate = () => `
             <p>${project.longDescription}</p>
             </div>
             <div class="tech-container">
-           <h2>🚀 Technologies Used</h2>
+           <h2>🚀 Teknologi yang digunakan</h2>
         <div class="tech-list">
-            ${project.technologies.map(tech => `<span class="tech-item"><i>💻</i> ${tech}</span>`).join('')}
+            ${project.technologies.map(tech => `<span class="tech-item"><i></i> ${tech}</span>`).join('')}
         </div>
           <div class="button-container">
             <a href="${project.link}" class="button github">
@@ -182,7 +181,7 @@ const ContactTemplate = () => `
         </div>
       </div>
       <div class="feature-box">
-              <h2><span class="icon">⭐</span> Key Features</h2>
+              <h2><span class="icon">⭐</span> Fitur</h2>
               <ul>
                   ${project.features.map(feature => `<li>🔵 ${feature}</li>`).join('')}
               </ul>
