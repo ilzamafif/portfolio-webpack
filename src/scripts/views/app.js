@@ -1,28 +1,23 @@
 import UrlParser from "../routes/url-parser";
-import DrawerInitiator from "../utils/drawer-initiator";
 import routes from "../routes/routes";
 
 class App {
-  constructor({ button, drawer, content }) {
-    // this._button = button;
-    // this._drawer = drawer;
+  constructor({ content }) {
     this._content = content;
-    this._initialAppShell();
-  }
-
-  _initialAppShell() {
-    DrawerInitiator.init({
-      // button: this._button,
-      // drawer: this._drawer,
-      content: this._content,
-    });
   }
 
   async renderPage() {
+    console.log("Rendering Page");
     const url = UrlParser.parseActiveUrlWithCombiner();
+    console.log("Parsed URL:", url);
     const page = routes[url];
-    this._content.innerHTML = await page.render();
-    await page.afterRender();
+    console.log("Matched Page:", page);
+    if (page) {
+      this._content.innerHTML = await page.render();
+      await page.afterRender();
+    } else {
+      this._content.innerHTML = "<error-message>Page not found</error-message>";
+    }
   }
 }
 

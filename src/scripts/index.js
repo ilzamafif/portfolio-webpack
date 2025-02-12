@@ -11,9 +11,11 @@ const app = new App({
 });
 
 window.addEventListener("hashchange", () => {
+  console.log("Hash changed");
   app.renderPage();
 });
 
 window.addEventListener("load", () => {
+  console.log("Window loaded");
   app.renderPage();
 });
